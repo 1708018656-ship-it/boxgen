@@ -8,3 +8,4 @@ dist/
 .pytest_cache/
 *.stl
 !examples/*.stl
+APPLICATION_DRAFT.md
