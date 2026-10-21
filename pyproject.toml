@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boxgen"
+version = "0.1.0"
+description = "Parametric, watertight STL boxes (closed, open-top, lid) for 3D printing - pure Python"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "1708018656-ship-it"}]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["stl", "3d-printing", "box", "cad", "jlcpcb"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Topic :: Multimedia :: Graphics :: 3D Modeling"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+preview = ["matplotlib"]
+
+[project.scripts]
+boxgen = "boxgen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/1708018656-ship-it/boxgen"
+
+[tool.setuptools.packages.find]
+where = ["src"]
